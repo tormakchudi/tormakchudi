@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Al Amin | Corporate Profile</title>
+    <style>
+        :root {
+            --corp-dark: #0a192f;
+            --corp-accent: #112240;
+            --corp-gold: #c5a880;
+            --corp-text-main: #334155;
+            --corp-text-muted: #64748b;
+            --corp-bg: #f8fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { background-color: var(--corp-bg); color: var(--corp-text-main); line-height: 1.8; font-size: 15px; }
+        
+        .resume-container { max-width: 850px; margin: 50px auto; background: var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 8px solid var(--corp-dark); border-radius: 0 0 12px 12px; }
+        
+        /* Executive Header */
+        .header { padding: 40px 50px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        
+        .header-left { display: flex; align-items: center; gap: 25px; flex-wrap: wrap; }
+        .header-main h1 { font-size: 2.5rem; color: var(--corp-dark); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px; font-weight: 700; }
+        .header-main h2 { font-size: 1.1rem; color: var(--corp-gold); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; }
+        
+        .header-contact { text-align: right; font-size: 0.9rem; color: var(--corp-text-muted); line-height: 1.6; }
+        .header-contact span { display: block; }
+
+        /* Main Content Grid */
+        .content { padding: 40px 50px; }
+        
+        .section-block { margin-bottom: 40px; }
+        .section-title { font-size: 1.2rem; color: var(--corp-dark); text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid var(--corp-gold); padding-bottom: 5px; margin-bottom: 20px; font-weight: 700; display: inline-block; }
+
+        /* Experience & Education Layout */
+        .entry { margin-bottom: 25px; }
+        .entry-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+        .entry-title { font-size: 1.1rem; font-weight: 700; color: var(--corp-dark); }
+        .entry-org { font-size: 1rem; font-weight: 600; color: var(--corp-text-muted); }
+        .entry-date { font-size: 0.9rem; font-weight: 600; color: var(--corp-gold); white-space: nowrap; }
+        
+        .entry-details { list-style-type: none; margin-top: 10px; }
+        .entry-details li { position: relative; padding-left: 18px; margin-bottom: 6px; font-size: 0.95rem; }
+        .entry-details li::before { content: "■"; color: var(--corp-gold); position: absolute; left: 0; font-size: 0.6rem; top: 6px; }
+
+        /* Competencies Grid */
+        .competencies-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 10px; }
+        .competency-item { border: 1px solid var(--border); padding: 10px 15px; font-size: 0.9rem; font-weight: 600; color: var(--corp-dark); text-align: center; background: var(--corp-bg); transition: all 0.3s ease; }
+        .competency-item:hover { border-color: var(--corp-gold); background: var(--white); }
+
+        /* Personal Info Table */
+        .info-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .info-table td { padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+        .info-table td:first-child { width: 30%; font-weight: 600; color: var(--corp-text-muted); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.5px; }
+        .info-table td:last-child { color: var(--corp-dark); font-weight: 500; }
+
+        @media (max-width: 768px) {
+            .header { flex-direction: column; text-align: center; }
+            .header-left { flex-direction: column; text-align: center; }
+            .header-contact { text-align: center; margin-top: 15px; }
+            .entry-header { flex-direction: column; }
+            .competencies-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <header class="header">
+        <div class="header-left">
+            <img src="profile.jpg" alt="Md. Al Amin" 
+                 style="width: 130px; height: auto; border-radius: 12px; border: 3px solid var(--corp-gold); box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+            
+            <div class="header-main">
+                <h1>Md. Al Amin</h1>
+                <h2>Corporate Operations Professional</h2>
+            </div>
+        </div>
+
+        <div class="header-contact">
+            <span>Rajshahi, Bangladesh</span>
+            <span>+880 1783675643</span>
+            <span>mdalamin71@hotmail.com</span>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="section-block">
+            <h3 class="section-title">Professional Summary</h3>
+            <p>A highly motivated and adaptable professional currently driving operational efficiency at <strong>Akij Group</strong>. With a strong academic background in Accounting and Business Studies, I am committed to streamlining processes and fostering teamwork in high-paced corporate environments.</p>
+        </div>
+
+        <div class="section-block">
+            <h3 class="section-title">Professional Experience</h3>
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Operations Executive</div>
+                        <div class="entry-org">Akij Group</div>
+                    </div>
+                    <div class="entry-date">Present</div>
+                </div>
+                <ul class="entry-details">
+                    <li>Executing day-to-day corporate operations following organizational standards.</li>
+                    <li>Collaborating with cross-functional teams to resolve operational challenges.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <h3 class="section-title">Academic Qualifications</h3>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Bachelor of Business Administration (BBA)</div>
+                        <div class="entry-org">Rajshahi Govt. City College</div>
+                    </div>
+                    <div class="entry-date">Ongoing (4th Year)</div>
+                </div>
+                <p style="color: var(--corp-text-muted); font-size: 0.95rem; font-weight: 600;">Department: Accounting</p>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Higher Secondary Certificate (H.S.C)</div>
+                        <div class="entry-org">Shahid A.H.M Kamaruzzaman Govt. Degree College</div>
+                    </div>
+                    <div class="entry-date">2020</div>
+                </div>
+                <p style="color: var(--corp-text-muted); font-size: 0.95rem;">Business Studies | Result: GPA 4.42</p>
+            </div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div>
+                        <div class="entry-title">Secondary School Certificate (S.S.C)</div>
+                        <div class="entry-org">Rajshahi Cantonment Board School & College</div>
+                    </div>
+                    <div class="entry-date">2018</div>
+                </div>
+                <p style="color: var(--corp-text-muted); font-size: 0.95rem;">Business Studies | Result: GPA 4.06</p>
+            </div>
+        </div>
+
+        <div class="section-block">
+            <h3 class="section-title">Core Competencies</h3>
+            <div class="competencies-grid">
+                <div class="competency-item">Financial Accounting</div>
+                <div class="competency-item">Corporate Operations</div>
+                <div class="competency-item">Resource Management</div>
+                <div class="competency-item">Team Leadership</div>
+                <div class="competency-item">Problem Solving</div>
+                <div class="competency-item">Strategic Planning</div>
+            </div>
+        </div>
+
+        <div class="section-block" style="margin-bottom: 0;">
+            <h3 class="section-title">Personal Dossier</h3>
+            <table class="info-table">
+                <tr><td>Full Name</td><td>Md. Al Amin</td></tr>
+                <tr><td>Date of Birth</td><td>November 11, 2003</td></tr>
+                <tr><td>National ID</td><td>3318224858</td></tr>
+                <tr><td>Blood Group</td><td>B+</td></tr>
+                <tr><td>Permanent Base</td><td>Vill: Noltree, P/O: Panihar, Godagari, Rajshahi</td></tr>
+            </table>
+        </div>
+    </div>
+    
+    <div style="text-align: center; padding: 35px 40px; border-top: 1px solid var(--border); background: var(--corp-bg); color: var(--corp-text-muted); font-size: 0.9rem; border-radius: 0 0 12px 12px; line-height: 1.8;">
+        <p style="margin-bottom: 15px; font-style: italic; color: var(--corp-dark); font-weight: 500;">
+            "Dedicated to driving operational excellence through a laser-focused approach to goal-setting and target achievement. I strongly believe in transforming challenges into growth opportunities through strategic planning and relentless execution."
+        </p>
+        <p style="font-size: 0.85rem;">&copy; 2026 Md. Al Amin. All Rights Reserved. | <span style="color: var(--corp-gold); font-weight: 600;">Crafted with precision</span></p>
+    </div>
+</div>
+
+</body>
+</html>
